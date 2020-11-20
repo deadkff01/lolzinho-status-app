@@ -23,7 +23,7 @@ interface Props {
 }
 
 export const Button: FC<Props> = ({ onPress }) => (
-  <ButtonStyle onPress={onPress}>
+  <ButtonStyle onPress={onPress} testID="button-search">
     <ButtonText>Pesquisar</ButtonText>
   </ButtonStyle>
 );

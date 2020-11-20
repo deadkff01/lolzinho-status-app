@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main Generate snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#212121",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "flex-start",
+        "marginTop": 0,
+        "paddingBottom": 10,
+        "paddingLeft": 5,
+        "paddingRight": 5,
+        "paddingTop": 10,
+      },
+      undefined,
+    ]
+  }
+>
+  <View>
+    <TextInput
+      allowFontScaling={true}
+      onChangeText={[Function]}
+      placeholder="Digite o nome do player"
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderColor": "#424242",
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "color": "#fff",
+            "height": 40,
+            "paddingBottom": 0,
+            "paddingLeft": 5,
+            "paddingRight": 5,
+            "paddingTop": 0,
+            "width": 200,
+          },
+          undefined,
+        ]
+      }
+      testID="player-name-input"
+      underlineColorAndroid="transparent"
+      value=""
+    />
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#33a2ff",
+        "borderBottomLeftRadius": 20,
+        "borderBottomRightRadius": 20,
+        "borderTopLeftRadius": 20,
+        "borderTopRightRadius": 20,
+        "marginBottom": 20,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 20,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+        "textAlign": "center",
+        "width": 150,
+      }
+    }
+    testID="button-search"
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#fff",
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "textAlign": "center",
+          },
+          undefined,
+        ]
+      }
+    >
+      Pesquisar
+    </Text>
+  </View>
+</View>
+`;

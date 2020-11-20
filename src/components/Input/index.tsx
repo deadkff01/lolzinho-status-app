@@ -29,6 +29,7 @@ const Input: FC<Props> = ({ placeholder, value, onChangeText, error }) => (
       placeholder={placeholder}
       value={value}
       onChangeText={onChangeText}
+      testID="player-name-input"
     />
     {error ? <Error>Player não encontrado</Error> : null}
   </View>
