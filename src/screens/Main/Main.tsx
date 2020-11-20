@@ -5,6 +5,7 @@ import Button from "../../components/Button";
 import CustomModal from "../../components/CustomModal";
 import CustomView, { CustomText } from "../../components/CustomView";
 import { getPlayerByName } from "../../api/baseService";
+import { View } from "react-native";
 
 export default function Main() {
   const [playerName, setPlayerName] = useState<string>("");
@@ -18,9 +19,9 @@ export default function Main() {
     try {
       const { data } = await getPlayerByName(playerName);
       setPlayerData(data);
-      console.log(data);
       setShowModal(false);
-    } catch {
+    } catch (e) {
+      console.log(e);
       setPlayerData({});
       setError(true);
       setShowModal(false);
@@ -38,10 +39,12 @@ export default function Main() {
       />
       <Button onPress={searchPlayer} />
       {Object.keys(playerData).length > 0 ? (
-        <CustomView>
-          <CustomText>Player Level:</CustomText>
-          <CustomText>{playerData.summonerLevel}</CustomText>
-        </CustomView>
+        <View testID="player-data">
+          <CustomView>
+            <CustomText>Player Level:</CustomText>
+            <CustomText>{playerData.summonerLevel}</CustomText>
+          </CustomView>
+        </View>
       ) : null}
     </Container>
   );

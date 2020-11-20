@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styled from "@emotion/native";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 
 const InputStyle = styled.TextInput`
   height: 40px;
